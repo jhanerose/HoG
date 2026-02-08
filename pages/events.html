@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | HoG - Helpers of God</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/branding/hog.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"><i class="fa-solid fa-hand-holding-heart"></i> HoG</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donate.html" class="donate-nav-btn">Donate Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="event-hero">
+        <div class="event-hero-content">
+            <span class="badge-urgent">Happening Now</span>
+            <h1>Grand Medical Mission 2026</h1>
+            <p>Join our volunteers in Bacoor providing free medical, dental, and optical services.</p>
+            
+            <div class="countdown-container">
+                <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px; border: 1px solid white;">Register as Volunteer</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterEvents('all')">All Events</button>
+            <button class="filter-btn" onclick="filterEvents('fundraiser')">Fundraisers</button>
+            <button class="filter-btn" onclick="filterEvents('outreach')">Outreach</button>
+            <button class="filter-btn" onclick="filterEvents('seminar')">Seminars</button>
+        </div>
+
+<div class="events-grid" id="eventsGrid">
+            
+            <div class="event-card" data-category="fundraiser">
+                <div class="event-img-wrapper">
+                    <img src="../assets/images/events/new-computers.jpg" alt="New Computers for Students">
+                    <div class="event-overlay"></div>
+                </div>
+                <div class="event-info">
+                    <span class="event-date"><i class="fa-regular fa-calendar"></i> Urgent / Ongoing</span>
+                    <h3>Computer Lab Upgrade</h3>
+                    <p>New high-performance computers are now ready to support your learning, projects, and growth for UPHSD - Molino Campus College of Computer Studies students.</p>
+                    <div class="progress-bar-sm"><div class="fill" style="width: 60%"></div></div>
+                    <small>35% Funds Raised</small>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="outreach">
+                <div class="event-img-wrapper">
+                    <img src="../assets/images/events/noche-buena.png" alt="Noche Buena Packs">
+                    <div class="event-overlay">
+                    </div>
+                </div>
+                <div class="event-info">
+                    <span class="event-date"><i class="fa-regular fa-calendar"></i> December 17, 2025</span>
+                    <h3>Noche Buena Gift Giving</h3>
+                    <p>Provide a "Salo-Salo" package (Ham, Quezo de Bola, Spaghetti) to 16 families in Brgy. Kaysuyo, Alfonso, Cavite.</p>
+                    <div class="progress-bar-sm"><div class="fill" style="width: 80%"></div></div>
+                    <small>60% Distributed</small>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="seminar">
+                <div class="event-img-wrapper">
+                    <img src="../assets/images/events/seminar.jpg" alt="Training Seminar">
+                    <div class="event-overlay">
+                    </div>
+                </div>
+                <div class="event-info">
+                    <span class="event-date"><i class="fa-regular fa-calendar"></i> January 22, 2026</span>
+                    <h3>Digital Empowerment & Livelihood Program</h3>
+                    <p>Community extension service session Seminar on "E-Services: Modern Solutions for Public Needs" by Prof. Homer T. Favenir</p>
+                    <div class="progress-bar-sm"><div class="fill" style="width: 100%"></div></div>
+                    <small style="color: var(--red-primary);">Registration Closed</small>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-hand-holding-heart"></i> HoG 2026</h3>
+                <p>Dedicated to humanitarian service and community resilience. Join us in making a difference today.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="events.html">Upcoming Events</a></li>
+                    <li><a href="contact.html">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> City of Bacoor, Philippines</li>
+                    <li><i class="fa-solid fa-phone"></i> +63 956 468 7513</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@hog.ph</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/photo.php?fbid=1001029255387487&set=pb.100064412665180.-2207520000&type=3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=529161065907644&set=pb.100064412665180.-2207520000&type=3#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=391355754625876&set=pb.100057442329125.-2207520000&type=3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=608677681056971&set=pb.100057442329125.-2207520000&type=3"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HoG - Helpers of God. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

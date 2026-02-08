@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Volunteer | HoG - Helpers of God</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/branding/hog.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fa-solid fa-hand-holding-heart"></i> HoG</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="donate.html" class="donate-nav-btn">Donate Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="background: var(--gradient-main);">
+        <div class="section-title" style="color: white;">
+            <h2 style="color: white;">Join the Movement</h2>
+            <p style="color: rgba(255,255,255,0.9);">Volunteer Registration & Contact</p>
+        </div>
+
+        <div class="form-wrapper">
+            <form id="volunteerForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Juan Dela Cruz">
+                    <div class="error-msg" id="nameError">Name is required</div>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="juan@example.com">
+                    <div class="error-msg" id="emailError">Valid email required</div>
+                </div>
+                <div class="input-group">
+                    <label>Area of Interest / Message</label>
+                    <textarea rows="4" placeholder="How would you like to help?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-hand-holding-heart"></i> HoG 2026</h3>
+                <p>Dedicated to humanitarian service and community resilience. Join us in making a difference today.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="events.html">Upcoming Events</a></li>
+                    <li><a href="contact.html">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> City of Bacoor, Philippines</li>
+                    <li><i class="fa-solid fa-phone"></i> +63 956 468 7513</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@hog.ph</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/photo.php?fbid=1001029255387487&set=pb.100064412665180.-2207520000&type=3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=529161065907644&set=pb.100064412665180.-2207520000&type=3#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=391355754625876&set=pb.100057442329125.-2207520000&type=3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/photo.php?fbid=608677681056971&set=pb.100057442329125.-2207520000&type=3"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 HoG - Helpers of God. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+        <i class="fa-solid fa-circle-check modal-icon"></i>
+        <h3>Application Sent!</h3>
+        <p>Thank you for volunteering. We will review your details and contact you soon.</p>
+        <button class="btn btn-primary" onclick="closeModal()">Close</button>
+    </div>
+</div>
+</body>
+</html>
